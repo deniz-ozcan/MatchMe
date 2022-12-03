@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameback"
+    tools:context=".MultiPlayer">
+
+    <ImageView
+        android:id="@+id/harryme"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/harry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/time_60"
+        android:textColor="#1DE9B6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linlay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText">
+
+        <TextView
+            android:id="@+id/scoreText1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/player_1_0"
+            android:textColor="#1DE9B6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scoreText2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:text="@string/player_2_0"
+            android:textColor="#F50057"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linlay2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardBackgroundColor="#00333333"
+            app:cardCornerRadius="20dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img00"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                android:tag="img00"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img01"
+                android:tag="img01"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img02"
+                android:tag="img02"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="3"
+            app:layout_row="0"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img03"
+                android:tag="img03"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="4"
+            app:layout_row="0"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img04"
+                android:tag="img04"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="5"
+            app:layout_row="0"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img05"
+                android:tag="img05"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img10"
+                android:tag="img10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="1"
+            app:layout_row="1"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img11"
+                android:tag="img11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="2"
+            app:layout_row="1"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img12"
+                android:tag="img12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="3"
+            app:layout_row="1"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img13"
+                android:tag="img13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="4"
+            app:layout_row="1"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img14"
+                android:tag="img14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="5"
+            app:layout_row="1"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img15"
+                android:tag="img15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="0"
+            app:layout_row="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img20"
+                android:tag="img20"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="1"
+            app:layout_row="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img21"
+                android:tag="img21"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="2"
+            app:layout_row="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img22"
+                android:tag="img22"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="3"
+            app:layout_row="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img23"
+                android:tag="img23"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="4"
+            app:layout_row="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img24"
+                android:tag="img24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="5"
+            app:layout_row="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img25"
+                android:tag="img25"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="0"
+            app:layout_row="3"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img30"
+                android:tag="img30"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="1"
+            app:layout_row="3"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img31"
+                android:tag="img31"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/car32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="2"
+            app:layout_row="3"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img32"
+                android:tag="img32"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="3"
+            app:layout_row="3"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img33"
+                android:tag="img33"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="4"
+            app:layout_row="3"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img34"
+                android:tag="img34"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="5"
+            app:layout_row="3"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img35"
+                android:tag="img35"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="0"
+            app:layout_row="4"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img40"
+                android:tag="img40"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="1"
+            app:layout_row="4"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img41"
+                android:tag="img41"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="2"
+            app:layout_row="4"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img42"
+                android:tag="img42"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="3"
+            app:layout_row="4"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img43"
+                android:tag="img43"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="4"
+            app:layout_row="4"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img44"
+                android:tag="img44"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="5"
+            app:layout_row="4"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img45"
+                android:tag="img45"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="0"
+            app:layout_row="5"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img50"
+                android:tag="img50"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="1"
+            app:layout_row="5"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img51"
+                android:tag="img51"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="2"
+            app:layout_row="5"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img52"
+                android:tag="img52"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="3"
+            app:layout_row="5"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img53"
+                android:tag="img53"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="4"
+            app:layout_row="5"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img54"
+                android:tag="img54"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00333333"
+            android:outlineSpotShadowColor="#00333333"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="20dp"
+            app:layout_column="5"
+            app:layout_row="5"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/img55"
+                android:tag="img55"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/backpic"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

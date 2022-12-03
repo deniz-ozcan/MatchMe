@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MatchMe</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="match_me">MATCH ME!</string>
+    <string name="haven_t_you_registered_yet">Haven\'t you registered, yet?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="did_you_forget_your_password">Did you forget your password?</string>
+    <string name="login">LogIn</string>
+    <string name="password_validation">Password Validation</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="sign_meup">Sign Up</string>
+    <string name="send_my_password">Send My Password</string>
+    <string name="e_mailme">E-mail</string>
+    <string name="sendtome">Send</string>
+    <string name="single_player">👤 SinglePlayer</string>
+    <string name="multiplayer">👥 MultiPlayer</string>
+    <string name="settings">⚙ Settings</string>
+    <string name="todo">TODO</string>
+    <string name="empty">TODO</string>
+    <string name="username_or_e_mail">Username or E-mail</string>
+    <string name="beginner">Beginner</string>
+    <string name="hard">Hard</string>
+    <string name="expert">Expert</string>
+    <string name="login2">LOGIN</string>
+    <string name="music">Music</string>
+    <string name="player_2_0">Player 2: 0</string>
+    <string name="player_1_0">🚩 Player 1: 0</string>
+    <string name="score_0">Score: 0</string>
+    <string name="time_45">Time: 45</string>
+    <string name="time_60">Time: 60</string>
+</resources>
