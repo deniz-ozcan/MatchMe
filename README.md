@@ -43,28 +43,31 @@
   <p align="justify">
     <p>There are three different hardness modes(easy, hard, expert).This modes has 4, 16, 36 cards. Except for a music that always plays in the background, when you win, when the time is up, when you match the cards, a total of 4 different music is played.</p>
     <p float="left">
-    <img src="/ex1.png" alt="App guis" width="150px" height="275px" />
-    <img src="/ex2.png" alt="App guis" width="150px" height="275px" />
-    <img src="/ex3.png" alt="App guis" width="150px" height="275px" />
-    <img src="/ex4.png" alt="App guis" width="150px" height="275px" />
-</p>
-    
+        <img src="/ex1.png" alt="App guis" width="20%"/>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="/ex2.png" alt="App guis" width="20%"/>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="/ex3.png" alt="App guis" width="20%"/>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <img src="/ex4.png" alt="App guis" width="20%"/>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+    </p>
   </p>
 
   ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
     <h2 id="howtoinstall">⛓️ How to install</h2>
   
   <p align="justify">
-    There are one easy way to deal with it:
+    There are two possible ways to deal with it:
   <ol>
     <li>Build and run the project with android studio
       <ul>
          <li> Open the location where all the documents are located in android studio.</li>
          <li> If you have emulator, you will be able to see the app.</li>
-         <li> If you don't have emulator, you should download and setup and emulator for ide.</li>
+         <li> If you don't have emulator, you should download and setup an emulator for ide.</li>
       </ul>
     </li>
-    <li>Setup app in your own mobile phone</li>
+    <li>Setup app in your own mobile phone
       <ul>
          <li><a id="linkforsetup" href="https://www.youtube.com/watch?v=QpuoZrKUVmo">➤ Setup app in your own mobile phone</a></li>
          <li>You can watch the video which I give you <a href="#linkforsetup">➤ Up Here</a> and do the instructions one step a time.</li>
@@ -77,5 +80,8 @@
   
   <!-- CREDITS -->
   <h2 id="Credits">:scroll: Credits</h2>
-  
+
+ ➤ Deniz Özcan &nbsp; &nbsp; 
 [![GitHubBadge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deniz-ozcan)[![LinkedInBadge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/98-deniz-ozcan/)
+&nbsp;&nbsp;&nbsp; &nbsp; ➤ Hakkıcan Çakmak&nbsp; &nbsp; &nbsp; &nbsp;
+[![GitHubBadge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cancakmk)[![LinkedInBadge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hakkıcan-çakmak-a96b33192/)
