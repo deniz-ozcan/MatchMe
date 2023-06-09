@@ -1,7 +1,7 @@
 <p align="center">
     <img src="/brand.svg" alt="App Logo" width="100px" height="100px" />
   </p>
-  <h1 align="center">Harry Potter Memory Mobile App</h1>
+  <h1 align="center">Harry Potter Memory Mobile Game</h1>
  
   <!-- TABLE OF CONTENTS -->
   <h2 id="table-of-contents">:book: Table of Contents</h2>
